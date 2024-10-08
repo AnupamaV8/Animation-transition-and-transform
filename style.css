@@ -92,8 +92,6 @@ h1 {
 #mydiv {
   border: 1px solid black;
   transform: rotateX(180deg);
-  transform: rotateY(170deg);
-
   background-color: yellow;
 }
 .container {
