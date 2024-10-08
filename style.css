@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-overflow: hidden;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  margin: 6px;
+  background-color: blue;
+  transition-duration: 10s;
+}
+#round {
+  animation-name: circle;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes circle {
+  0% {
+    border-radius: none;
+    background-color: rgb(15, 118, 118);
+    left: 0px;
+    top: 0px;
+  }
+  33% {
+    background-color: red;
+    left: 50px;
+    top: 0px;
+  }
+  50% {
+    border-radius: 50%;
+    background-color: aquamarine;
+    left: 50px;
+    top: 50px;
+  }
+  66% {
+    background-color: green;
+    left: 0px;
+    top: 50px;
+  }
+  100% {
+    border-radius: none;
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+}
+#reverse {
+  border-bottom: 100px solid blue;
+  border-top: 100px solid blue;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  position: relative;
+  animation-name: triangle;
+  animation-direction: normal;
+  animation-duration: 5s;
+  animation-iteration-count: 10;
+}
+@keyframes triangle {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 200px;
+  }
+}
+
+#ease-in-out {
+  transition: width 6s ease-in-out 2s;
+}
+#ease-in-out:hover {
+  width: 500px;
+  transition-property: width;
+}
+#mydiv {
+  border: 1px solid black;
+  transform: rotateX(180deg);
+  transform: rotateY(170deg);
+
+  background-color: yellow;
+}
+.container {
+  height: 420px;
+  width: 400px;
+}
